@@ -140,9 +140,11 @@ export function Footer() {
             </div>
           </div>
         </div>
-
         <div className="border-t border-slate-800 mt-12 pt-8 text-center text-sm text-slate-400">
           <p>&copy; {new Date().getFullYear()} Kinch Enterprises. All rights reserved.</p>
+          <p className="text-xs text-muted-foreground mt-2">
+            Website by <a href="https://www.thepeopleservice.com" className="text-white hover:bg-orange-500 py-1 px-1" target="_blank" rel="noopener noreferrer">The People Service</a>
+          </p>
         </div>
       </div>
     </footer>
