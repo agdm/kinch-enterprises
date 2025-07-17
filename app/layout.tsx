@@ -13,7 +13,28 @@ export const metadata: Metadata = {
     "Professional real estate development, general construction, and project management services across NY, NJ, CT, GA, and FL. Quality craftsmanship and sustainable solutions.",
   keywords:
     "real estate development, general construction, project management, HVAC design, custom design, remodeling, renovation, New York, New Jersey, Connecticut, Georgia, Florida",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  openGraph: {
+    images: [
+      {
+        url: "/images/ke-black-logo.png",
+        width: 800,
+        height: 600,
+        alt: "Kinch Enterprises Logo"
+      }
+    ]
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: [
+      {
+        url: "/images/ke-black-logo.png",
+        width: 800,
+        height: 600,
+        alt: "Kinch Enterprises Logo"
+      }
+    ]
+  }
 }
 
 export default function RootLayout({
