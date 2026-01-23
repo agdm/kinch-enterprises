@@ -128,8 +128,8 @@ export default function AboutPage() {
             {/* Daniel Kinch */}
             <Card className="overflow-hidden">
               <div className="grid md:grid-cols-2">
-                <div className="flex items-center justify-center p-8 bg-slate-50">
-                  <div className="relative w-48 h-48 lg:w-64 lg:h-64">
+                <div className="flex items-start justify-center p-8 bg-slate-50">
+                  <div className="relative w-56 h-56 lg:w-80 lg:h-80">
                     <Image
                       src="/images/1696631442113.jpeg"
                       alt="Daniel Kinch"
@@ -186,8 +186,8 @@ export default function AboutPage() {
             {/* Uriel Kinch */}
             <Card className="overflow-hidden">
               <div className="grid md:grid-cols-2">
-                <div className="flex items-center justify-center p-8 bg-slate-50">
-                  <div className="relative w-48 h-48 lg:w-64 lg:h-64">
+                <div className="flex items-start justify-center p-8 bg-slate-50">
+                  <div className="relative w-56 h-56 lg:w-80 lg:h-80">
                     <Image
                       src="/images/1768932966720.jpeg"
                       alt="Uriel Kinch"
