@@ -77,11 +77,11 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
+                src="/images/team.png"
                 alt="Kinch Enterprises team"
                 width={600}
                 height={500}
-                className="rounded-lg shadow-lg"
+                className="rounded-[3rem] shadow-2xl border-8 border-slate-50"
               />
             </div>
           </div>
@@ -124,37 +124,47 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="grid lg:grid-cols-1 gap-16">
             {/* Daniel Kinch */}
             <Card className="overflow-hidden">
               <div className="grid md:grid-cols-2">
-                <div className="relative h-64 md:h-auto">
-                  <Image
-                    src="/placeholder.svg?height=400&width=300"
-                    alt="Daniel Kinch"
-                    width={300}
-                    height={400}
-                    className="w-full h-full object-cover"
-                  />
+                <div className="flex items-center justify-center p-8 bg-slate-50">
+                  <div className="relative w-48 h-48 lg:w-64 lg:h-64">
+                    <Image
+                      src="/images/1696631442113.jpeg"
+                      alt="Daniel Kinch"
+                      fill
+                      className="rounded-full object-cover border-4 border-white shadow-lg"
+                    />
+                  </div>
                 </div>
                 <CardContent className="p-8">
                   <div className="space-y-4">
                     <div>
                       <h3 className="text-2xl font-bold text-slate-900">Daniel Kinch</h3>
-                      <p className="text-orange-500 font-medium">Co-Founder & CEO</p>
+                      <p className="text-orange-500 font-medium text-sm">Managing Partner & Real Estate Developer</p>
+                      <div className="flex items-center pt-2">
+                        <Badge variant="outline" className="text-xs">
+                          <Link href="https://www.linkedin.com/in/daniel-kinch/" title="Daniel Kinch LinkedIn">LinkedIn</Link>
+                        </Badge>
+                      </div>
                     </div>
                     <p className="text-slate-600 text-sm leading-relaxed">
-                      Serial entrepreneur with extensive experience in both for-profit and non-profit sectors. Daniel&apos;s
-                      innovative program creation and focus on underserved populations has driven transformative
-                      community development initiatives.
+                      Daniel Kinch is a serial entrepreneur and real estate developer with over 15 years of experience across the private and non-profit sectors. As Managing Partner of Kinch Enterprises LLC, he oversees a full-service development and project management firm that, in 2025 alone, managed over $5 million in new construction and renovations. His expertise includes end-to-end project execution for residential, commercial, and government clients, with a specialized background in Brownfield land development and multi-million-dollar remediation projects.
                     </p>
+                    <p className="text-slate-600 text-sm leading-relaxed">
+                      Beyond construction, Daniel is a dedicated advocate for economic equity, having been instrumental in establishing federal job training initiatives for underrepresented populations. He holds a B.S. in Business Administration from Morris Brown College, an M.Ed. from Springfield College, and is a certified Real Estate Development Consultant. His commitment to community stewardship is further reflected in his leadership roles as Chair of the Board for Hartford Community That Cares and a board member for Technology for {"{"}You{"}"}th.
+                    </p>
+
+                    <ul className="text-slate-600 text-sm leading-relaxed list-disc space-y-2 pl-6">
+                      <li>Executive Leadership: Managing Partner of Kinch Enterprises LLC, overseeing $5M+ in active projects.</li>
+                      <li>Sector Versatility: Deep experience in residential, commercial, and government contracting, including complex Brownfield remediation.</li>
+                      <li>Public Policy Impact: Key contributor to the 2010 federal job training programs focused on sustainable skill sets for the formerly incarcerated.</li>
+                      <li>Community Governance: Active Board Chair and member for organizations focused on youth technology and community care.</li>
+                      <li>Academic Foundation: Combines a business and marketing background with a Master’s in Education and specialized development certifications.</li>
+                    </ul>
+
                     <div className="space-y-2 text-sm">
-                      <div className="flex items-center space-x-2">
-                        <Badge variant="outline" className="text-xs">
-                          Obama Administration
-                        </Badge>
-                        <span className="text-slate-500">Job Training Program</span>
-                      </div>
                       <div className="flex items-center space-x-2">
                         <Badge variant="outline" className="text-xs">
                           Expertise
@@ -176,33 +186,43 @@ export default function AboutPage() {
             {/* Uriel Kinch */}
             <Card className="overflow-hidden">
               <div className="grid md:grid-cols-2">
-                <div className="relative h-64 md:h-auto">
-                  <Image
-                    src="/placeholder.svg?height=400&width=300"
-                    alt="Uriel Kinch"
-                    width={300}
-                    height={400}
-                    className="w-full h-full object-cover"
-                  />
+                <div className="flex items-center justify-center p-8 bg-slate-50">
+                  <div className="relative w-48 h-48 lg:w-64 lg:h-64">
+                    <Image
+                      src="/images/1768932966720.jpeg"
+                      alt="Uriel Kinch"
+                      fill
+                      className="rounded-full object-cover border-4 border-white shadow-lg"
+                    />
+                  </div>
                 </div>
                 <CardContent className="p-8">
                   <div className="space-y-4">
                     <div>
                       <h3 className="text-2xl font-bold text-slate-900">Uriel Kinch</h3>
-                      <p className="text-orange-500 font-medium">Managing Partner & Chief Engineer</p>
+                      <p className="text-orange-500 font-medium text-sm">Managing Partner & Chief Engineer</p>
+                      <div className="flex items-center pt-2">
+                        <Badge variant="outline" className="text-xs">
+                          <Link href="https://www.linkedin.com/in/uriel-kinch-cpmm-fmp-880b67214/" title=" Uriel Kinch LinkedIn">LinkedIn</Link>
+                        </Badge>
+                      </div>
                     </div>
                     <p className="text-slate-600 text-sm leading-relaxed">
-                      Nearly two decades of experience in real estate development, construction, and engineering. Former
-                      Chief Engineer at Google&apos;s NYC Campus, with expertise in large-scale commercial properties and
-                      sustainable solutions.
+                      Uriel Kinch is a real estate development and operations principal with nearly two decades of experience managing complex commercial portfolios and mission-critical infrastructure. As Managing Partner of Kinch Enterprises and Chief Engineer for a major institutional technology campus in NYC, he specializes in adaptive reuse, capital planning, and technical system modernization. His expertise spans leading multidisciplinary teams and overseeing large-scale HVAC, electrical, and life-safety systems, ensuring operational durability and regulatory compliance for high-demand properties.
                     </p>
+                    <p className="text-slate-600 text-sm leading-relaxed">
+                      A Brooklyn native, Uriel integrates a grounded perspective with deep technical mastery to reposition underutilized assets into high-performing, income-producing properties. He also operates MR HVACR SERVICES LLC, a consulting practice that sharpens his approach to construction risk, labor management, and energy strategy. Uriel holds multiple credentials, including IFMA FMP, AFE CPMM, and FDNY Q-99 certifications, supported by degrees in Sustainable HVAC and Business Management, providing a unique blend of field-level trade execution and institutional asset stewardship.
+                    </p>
+
+                    <ul className="text-slate-600 text-sm leading-relaxed list-disc space-y-2 pl-6">
+                      <li>Leadership Roles: Managing Partner (Kinch Enterprises) and Chief Engineer (NYC Tech Campus).</li>
+                      <li>Core Competencies: Adaptive reuse, HVAC/infrastructure modernization, and capital planning.</li>
+                      <li>Business Acumen: Direct experience in labor management and construction risk via MR HVACR SERVICES.</li>
+                      <li>Credentials: FMP, CPMM, Q-99, and Sustainable HVAC/Business degrees.</li>
+                      <li>Focus: Balancing design quality with long-term lifecycle performance and &quot;operational foresight.&quot;</li>
+                    </ul>
+
                     <div className="space-y-2 text-sm">
-                      <div className="flex items-center space-x-2">
-                        <Badge variant="outline" className="text-xs">
-                          Google NYC
-                        </Badge>
-                        <span className="text-slate-500">Chief Engineer</span>
-                      </div>
                       <div className="flex items-center space-x-2">
                         <Badge variant="outline" className="text-xs">
                           Expertise
