@@ -64,7 +64,7 @@ export default function HomePage() {
                   Redefining the Built Environment
                 </Badge>
                 <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                  Building Tomorrow's
+                  Building Tomorrow&apos;s
                   <span className="text-orange-400"> Communities</span>
                 </h1>
                 <p className="text-xl text-slate-300 leading-relaxed">

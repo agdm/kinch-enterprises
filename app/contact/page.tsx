@@ -53,7 +53,7 @@ export default function ContactPage() {
             <Badge variant="secondary" className="bg-white/10 text-white border-white/20 mb-6">
               Contact Us
             </Badge>
-            <h1 className="text-4xl lg:text-5xl font-bold mb-6">Let's Build Something Great Together</h1>
+            <h1 className="text-4xl lg:text-5xl font-bold mb-6">Let&apos;s Build Something Great Together</h1>
             <p className="text-xl text-slate-300 leading-relaxed">
               Ready to start your next project? Get in touch with our team to discuss how we can bring your vision to
               life.
@@ -71,7 +71,7 @@ export default function ContactPage() {
               <Card>
                 <CardHeader>
                   <CardTitle className="text-2xl text-slate-900">Request a Quote</CardTitle>
-                  <p className="text-slate-600">Fill out the form below and we'll get back to you within 24 hours.</p>
+                  <p className="text-slate-600">Fill out the form below and we&apos;ll get back to you within 24 hours.</p>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -304,7 +304,7 @@ export default function ContactPage() {
                   <h3 className="text-lg font-semibold text-slate-900 mb-2">Are you licensed and insured?</h3>
                   <p className="text-slate-600 text-sm">
                     Yes, Kinch Enterprises is fully licensed and insured in all states where we operate. We maintain
-                    comprehensive liability and workers' compensation coverage.
+                    comprehensive liability and workers&apos; compensation coverage.
                   </p>
                 </div>
 

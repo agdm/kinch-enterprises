@@ -144,7 +144,7 @@ export default function AboutPage() {
                       <p className="text-orange-500 font-medium">Co-Founder & CEO</p>
                     </div>
                     <p className="text-slate-600 text-sm leading-relaxed">
-                      Serial entrepreneur with extensive experience in both for-profit and non-profit sectors. Daniel's
+                      Serial entrepreneur with extensive experience in both for-profit and non-profit sectors. Daniel&apos;s
                       innovative program creation and focus on underserved populations has driven transformative
                       community development initiatives.
                     </p>
@@ -193,7 +193,7 @@ export default function AboutPage() {
                     </div>
                     <p className="text-slate-600 text-sm leading-relaxed">
                       Nearly two decades of experience in real estate development, construction, and engineering. Former
-                      Chief Engineer at Google's NYC Campus, with expertise in large-scale commercial properties and
+                      Chief Engineer at Google&apos;s NYC Campus, with expertise in large-scale commercial properties and
                       sustainable solutions.
                     </p>
                     <div className="space-y-2 text-sm">

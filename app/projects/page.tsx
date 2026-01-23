@@ -220,7 +220,7 @@ export default function ProjectsPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">Ready to Start Your Next Project?</h2>
           <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
-            Let's discuss how we can bring your vision to life with the same excellence and attention to detail shown in
+            Let&apos;s discuss how we can bring your vision to life with the same excellence and attention to detail shown in
             our portfolio.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
