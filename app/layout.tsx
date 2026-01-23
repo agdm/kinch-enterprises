@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "https://kinch-enterprises.thepeopleservice.com/images/ke-black-logo.png",
+        url: "https://kinch-ent.com/images/floorplan.png",
         width: 800,
         height: 600,
         alt: "Kinch Enterprises Logo"
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     images: [
       {
-        url: "https://kinch-enterprises.thepeopleservice.com/images/ke-black-logo.png",
+        url: "https://kinch-ent.com/images/floorplan.png",
         width: 800,
         height: 600,
         alt: "Kinch Enterprises Logo"
