@@ -129,6 +129,12 @@ export function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
+                <Link href="mailto:daniel@kinchent.com" className="hover:text-white transition-colors">
+                  daniel@kinchent.com
+                </Link>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Mail className="h-4 w-4" />
                 <Link href="mailto:uriel@kinchent.com" className="hover:text-white transition-colors">
                   uriel@kinchent.com
                 </Link>
