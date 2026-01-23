@@ -54,8 +54,19 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 lg:py-32">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <section className="relative text-white py-20 lg:py-32 overflow-hidden">
+        {/* Background Image and Overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/floorplan.png"
+            alt="Architectural floor plan"
+            fill
+            className="object-cover opacity-20"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-slate-800/50 to-slate-900/90"></div>
+        </div>
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
