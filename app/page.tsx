@@ -252,7 +252,7 @@ export default function HomePage() {
             >
               <Link href="tel:404-840-5723">
                 <Phone className="mr-2 h-4 w-4" />
-                Call (404) 840-5723
+                Call (860) 449-0042
               </Link>
             </Button>
           </div>

@@ -41,7 +41,7 @@ export function Header() {
           <div className="hidden md:flex items-center space-x-4">
             <Link href="tel:404-840-5723" className="text-sm text-slate-600 hover:text-orange-500">
               <Phone className="inline h-4 w-4 mr-1" />
-              (404) 840-5723
+              (860) 449-0042
             </Link>
             <Button className="bg-orange-500 hover:bg-orange-600" asChild>
               <Link href="/contact">Get Quote</Link>
@@ -71,7 +71,7 @@ export function Header() {
                 <div className="pt-4 border-t">
                   <Link href="tel:404-840-5723" className="text-sm text-slate-600 hover:text-orange-500 block mb-4">
                     <Phone className="inline h-4 w-4 mr-1" />
-                    (404) 840-5723
+                    (860) 449-0042
                   </Link>
                   <Button className="bg-orange-500 hover:bg-orange-600 w-full" asChild>
                     <Link href="/contact">Get Quote</Link>

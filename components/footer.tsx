@@ -124,7 +124,7 @@ export function Footer() {
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
                 <Link href="tel:404-840-5723" className="hover:text-white transition-colors">
-                  (404) 840-5723
+                  (860) 449-0042
                 </Link>
               </div>
               <div className="flex items-center space-x-2">

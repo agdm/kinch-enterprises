@@ -187,7 +187,7 @@ export default function ContactPage() {
                     <div>
                       <p className="font-medium text-slate-900">Phone</p>
                       <a href="tel:404-840-5723" className="text-slate-600 hover:text-orange-500">
-                        (404) 840-5723
+                        (860) 449-0042
                       </a>
                     </div>
                   </div>
@@ -253,7 +253,7 @@ export default function ContactPage() {
                 <CardContent>
                   <p className="text-slate-600 text-sm mb-3">For urgent project matters or emergencies:</p>
                   <a href="tel:404-840-5723" className="text-orange-500 hover:text-orange-600 font-medium">
-                    (404) 840-5723
+                    (860) 449-0042
                   </a>
                   <p className="text-slate-500 text-xs mt-2">Available 24/7 for existing project emergencies</p>
                 </CardContent>
