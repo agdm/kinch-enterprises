@@ -170,7 +170,7 @@ export default function ProjectsPage() {
                       </div>
                     </div>
 
-                    <div className="pt-4 border-t">
+                    {/* <div className="pt-4 border-t">
                       <Button
                         variant="ghost"
                         className="w-full justify-between text-orange-500 hover:text-orange-600 hover:bg-orange-50 p-0"
@@ -178,7 +178,7 @@ export default function ProjectsPage() {
                         View Project Details
                         <ArrowRight className="h-4 w-4" />
                       </Button>
-                    </div>
+                    </div> */}
                   </div>
                 </CardContent>
               </Card>
