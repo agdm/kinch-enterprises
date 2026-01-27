@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Building2, Users, Award, MapPin, Phone, ArrowRight, CheckCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { ImageSlideshow } from "@/components/image-slideshow"
 
 export default function HomePage() {
   const services = [
@@ -34,7 +35,7 @@ export default function HomePage() {
     {
       title: "Commercial HVAC Installation",
       description: "High-efficiency heating and cooling system installation for large-scale commercial facilities",
-      image: "/images/hvac/18902.jpg",
+      images: ["/images/hvac/18902.jpg", "/images/hvac/18903.jpg", "/images/hvac/18904.jpg"],
       category: "General Construction",
     },
     {
@@ -171,15 +172,21 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredProjects.map((project, index) => (
               <Card key={index} className="group overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div className="relative overflow-hidden">
-                  <Image
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    width={400}
-                    height={300}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <Badge className="absolute top-4 left-4 bg-orange-500">{project.category}</Badge>
+                <div className="relative overflow-hidden aspect-[4/3]">
+                  {"images" in project ? (
+                    <ImageSlideshow
+                      images={project.images as string[]}
+                      imageClassName="group-hover:scale-105 transition-transform duration-300"
+                    />
+                  ) : (
+                    <Image
+                      src={(project as any).image || "/placeholder.svg"}
+                      alt={project.title}
+                      fill
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  )}
+                  <Badge className="absolute top-4 left-4 bg-orange-500 z-10">{project.category}</Badge>
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-slate-900 mb-3">{project.title}</h3>

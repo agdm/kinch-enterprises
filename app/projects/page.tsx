@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { MapPin, Calendar, ArrowRight } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { ImageSlideshow } from "@/components/image-slideshow"
 
 export default function ProjectsPage() {
   const projects = [
@@ -14,7 +15,7 @@ export default function ProjectsPage() {
       year: "2024",
       description:
         "High-efficiency heating and cooling system installation for large-scale commercial facilities, ensuring optimal climate control and energy efficiency.",
-      image: "/images/hvac/18902.jpg",
+      images: ["/images/hvac/18902.jpg", "/images/hvac/18903.jpg", "/images/hvac/18904.jpg"],
       features: ["Industrial HVAC Units", "Energy Management System", "Custom Ductwork", "24/7 Monitoring"],
       status: "Completed",
     },
@@ -126,15 +127,21 @@ export default function ProjectsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <Card key={index} className="group overflow-hidden hover:shadow-xl transition-all duration-300">
-                <div className="relative overflow-hidden">
-                  <Image
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    width={400}
-                    height={300}
-                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 left-4 flex gap-2">
+                <div className="relative overflow-hidden aspect-[4/3]">
+                  {"images" in project ? (
+                    <ImageSlideshow
+                      images={project.images as string[]}
+                      imageClassName="group-hover:scale-105 transition-transform duration-300"
+                    />
+                  ) : (
+                    <Image
+                      src={(project as any).image || "/placeholder.svg"}
+                      alt={project.title}
+                      fill
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  )}
+                  <div className="absolute top-4 left-4 flex gap-2 z-10">
                     <Badge className="bg-orange-500">{project.category}</Badge>
                     <Badge variant={project.status === "Completed" ? "default" : "secondary"}>{project.status}</Badge>
                   </div>
