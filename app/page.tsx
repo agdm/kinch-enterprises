@@ -32,10 +32,10 @@ export default function HomePage() {
 
   const featuredProjects = [
     {
-      title: "Urban Mixed-Use Development",
-      description: "Transformative 50-unit residential and commercial complex in downtown Atlanta",
-      image: "/placeholder.svg?height=300&width=400",
-      category: "Real Estate Development",
+      title: "Commercial HVAC Installation",
+      description: "High-efficiency heating and cooling system installation for large-scale commercial facilities",
+      image: "/images/hvac/18902.jpg",
+      category: "General Construction",
     },
     {
       title: "Corporate Headquarters Renovation",

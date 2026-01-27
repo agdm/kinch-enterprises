@@ -8,14 +8,14 @@ import Link from "next/link"
 export default function ProjectsPage() {
   const projects = [
     {
-      title: "Atlantic Commons Mixed-Use Development",
-      location: "Atlanta, Georgia",
-      category: "Real Estate Development",
-      year: "2023",
+      title: "Commercial HVAC Installation",
+      location: "Stamford, Connecticut",
+      category: "General Construction",
+      year: "2024",
       description:
-        "A transformative 50-unit residential and commercial complex featuring sustainable design and community-focused amenities in downtown Atlanta.",
-      image: "/placeholder.svg?height=300&width=400",
-      features: ["50 Residential Units", "10,000 sq ft Commercial Space", "LEED Certified", "Community Garden"],
+        "High-efficiency heating and cooling system installation for large-scale commercial facilities, ensuring optimal climate control and energy efficiency.",
+      image: "/images/hvac/18902.jpg",
+      features: ["Industrial HVAC Units", "Energy Management System", "Custom Ductwork", "24/7 Monitoring"],
       status: "Completed",
     },
     {
