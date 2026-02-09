@@ -108,7 +108,7 @@ export default function HomePage() {
 
             <div className="relative flex items-center justify-center">
               <Image
-                src="/images/ke-white-logo.png"
+                src="/images/kinchlogowithglass/glass-logo.jpg"
                 alt="Kinch Enterprises Logo"
                 width={400}
                 height={300}
