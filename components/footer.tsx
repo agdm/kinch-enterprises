@@ -10,7 +10,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <Image
-              src="/images/ke-white-logo.png"
+              src="/images/kinchlogowithglass/glass-logo.jpg"
               alt="Kinch Enterprises"
               width={150}
               height={50}
