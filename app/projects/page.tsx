@@ -15,62 +15,73 @@ export default function ProjectsPage() {
       year: "2024",
       description:
         "High-efficiency heating and cooling system installation for large-scale commercial facilities, ensuring optimal climate control and energy efficiency.",
-      images: ["/images/hvac/18902.jpg", "/images/hvac/18903.jpg", "/images/hvac/18904.jpg"],
+      images: ["/images/hvac_001/18902.jpg", "/images/hvac_001/18903.jpg", "/images/hvac_001/18904.jpg"],
       features: ["Industrial HVAC Units", "Energy Management System", "Custom Ductwork", "24/7 Monitoring"],
       status: "Completed",
     },
     {
-      title: "TechCorp Headquarters Renovation",
+      title: "Bathroom Project",
       location: "Stamford, Connecticut",
       category: "General Construction",
       year: "2023",
       description:
         "Complete renovation of 100,000 sq ft corporate facility with focus on energy efficiency and modern workplace design.",
-      image: "/placeholder.svg?height=300&width=400",
+      images: ["/images/bathroom_001/img_001.jpeg", "/images/bathroom_001/img_002.jpeg", "/images/bathroom_001/img_003.jpeg"],
       features: ["100,000 sq ft Renovation", "Energy Efficient Systems", "Modern Workspace Design", "HVAC Upgrade"],
       status: "Completed",
     },
     {
-      title: "Riverside Community Center",
+      title: "Bathroom Project",
       location: "Newark, New Jersey",
       category: "Project Management",
       year: "2022",
       description:
         "New 25,000 sq ft community center serving underserved populations with recreational and educational facilities.",
-      image: "/placeholder.svg?height=300&width=400",
+      images: ["/images/bathroom_002/img_001.jpeg", "/images/bathroom_002/img_002.jpeg"],
       features: ["25,000 sq ft Facility", "Multi-Purpose Spaces", "Educational Facilities", "Recreational Areas"],
       status: "Completed",
     },
     {
-      title: "Luxury Residential Complex",
-      location: "Miami, Florida",
+      title: "Kitchen Project",
+      location: "Newark, New Jersey",
       category: "Real Estate Development",
       year: "2024",
       description:
         "High-end residential development featuring 75 luxury units with waterfront views and premium amenities.",
-      image: "/placeholder.svg?height=300&width=400",
+      images: ["/images/kitchen_001/floor_plan.png", "/images/kitchen_001/img_001.jpeg", "/images/kitchen_001/img_002.jpeg", "/images/kitchen_001/img_003.jpg"],
       features: ["75 Luxury Units", "Waterfront Location", "Premium Amenities", "Sustainable Features"],
       status: "In Progress",
     },
     {
-      title: "Historic Building Restoration",
+      title: "Kitchen Project",
       location: "New York, New York",
       category: "Remodeling & Renovation",
       year: "2023",
       description:
         "Careful restoration of a 1920s commercial building while preserving historical character and adding modern functionality.",
-      image: "/placeholder.svg?height=300&width=400",
+      images: ["/images/kitchen_002/img_001.jpeg", "/images/kitchen_002/img_002.jpeg", "/images/kitchen_002/img_003.jpeg"],
       features: ["Historic Preservation", "Modern Upgrades", "Code Compliance", "Character Retention"],
       status: "Completed",
     },
     {
-      title: "Green Office Complex",
+      title: "Living Room Project",
       location: "Hartford, Connecticut",
       category: "Custom Design",
       year: "2024",
       description:
         "Innovative office complex designed with cutting-edge sustainable technologies and energy-efficient systems.",
-      image: "/placeholder.svg?height=300&width=400",
+      images: ["/images/living_room_001/img_001.jpeg", "/images/living_room_001/img_002.jpeg"],
+      features: ["Sustainable Design", "Energy Efficient", "Modern Architecture", "Green Technologies"],
+      status: "In Progress",
+    },
+    {
+      title: "New Build",
+      location: "Hartford, Connecticut",
+      category: "General Construction",
+      year: "2024",
+      description:
+        "New construction of a 100,000 sq ft office complex with sustainable design and energy-efficient systems.",
+      images: ["/images/new_build_001/img_001.jpeg", "/images/new_build_001/img_002.jpeg", "/images/new_build_001/img_003.jpeg", "/images/new_build_001/img_004.jpeg", "/images/new_build_001/img_005.jpeg", "/images/new_build_001/img_006.jpeg", "/images/new_build_001/img_007.jpeg", "/images/new_build_001/img_008.jpeg", "/images/new_build_001/img_009.jpeg"],
       features: ["Sustainable Design", "Energy Efficient", "Modern Architecture", "Green Technologies"],
       status: "In Progress",
     },
@@ -136,7 +147,7 @@ export default function ProjectsPage() {
                   ) : (
                     <Image
                       src={(project as any).image || "/placeholder.svg"}
-                      alt={project.title}
+                      alt={(project as any).title}
                       fill
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />

@@ -35,20 +35,22 @@ export default function HomePage() {
     {
       title: "Commercial HVAC Installation",
       description: "High-efficiency heating and cooling system installation for large-scale commercial facilities",
-      images: ["/images/hvac/18902.jpg", "/images/hvac/18903.jpg", "/images/hvac/18904.jpg"],
+      images: ["/images/hvac_001/18902.jpg", "/images/hvac_001/18903.jpg", "/images/hvac_001/18904.jpg"],
       category: "General Construction",
     },
     {
-      title: "Corporate Headquarters Renovation",
-      description: "Complete renovation of 100,000 sq ft corporate facility with sustainable design",
-      image: "/placeholder.svg?height=300&width=400",
-      category: "General Construction",
+      title: "Kitchen Project",
+      category: "Real Estate Development",
+      description:
+        "High-end residential development featuring 75 luxury units with waterfront views and premium amenities.",
+      images: ["/images/kitchen_001/floor_plan.png", "/images/kitchen_001/img_001.jpeg", "/images/kitchen_001/img_002.jpeg", "/images/kitchen_001/img_003.jpg"],
     },
     {
-      title: "Community Center Project",
-      description: "New 25,000 sq ft community center serving underserved populations",
-      image: "/placeholder.svg?height=300&width=400",
-      category: "Project Management",
+      title: "New Build",
+      category: "General Construction",
+      description:
+        "New construction of a 100,000 sq ft office complex with sustainable design and energy-efficient systems.",
+      images: ["/images/new_build_001/img_001.jpeg", "/images/new_build_001/img_002.jpeg", "/images/new_build_001/img_003.jpeg", "/images/new_build_001/img_004.jpeg", "/images/new_build_001/img_005.jpeg", "/images/new_build_001/img_006.jpeg", "/images/new_build_001/img_007.jpeg", "/images/new_build_001/img_008.jpeg", "/images/new_build_001/img_009.jpeg"],
     },
   ]
 
