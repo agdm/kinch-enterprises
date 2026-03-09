@@ -9,91 +9,93 @@ import { ImageSlideshow } from "@/components/image-slideshow"
 export default function ProjectsPage() {
   const projects = [
     {
-      title: "Commercial HVAC Installation",
-      location: "Stamford, Connecticut",
-      category: "General Construction",
+      title: "Commercial Boiler & HVAC Retrofit",
+      location: "Stamford, CT",
+      category: "Mechanical (MEP)",
       year: "2024",
       description:
-        "High-efficiency heating and cooling system installation for large-scale commercial facilities, ensuring optimal climate control and energy efficiency.",
+        "This project involved a comprehensive mechanical system overhaul within a mission-critical corporate environment. Our team managed the full decommissioning of legacy boiler units and the subsequent installation of high-efficiency, multi-stage heating and cooling systems designed for maximum load-demand response. Beyond the physical hardware, a significant portion of the scope focused on precision commissioning: utilizing digital manifold gauge sets for real-time pressure diagnostics and integrating advanced control board logic into the existing Building Management System (BMS). By optimizing the signal calibration between the central plant and terminal units, we successfully achieved a stabilized thermal envelope, significantly reducing seasonal energy consumption while ensuring 24/7 climate reliability for the facility’s sensitive infrastructure..",
       images: ["/images/hvac_001/18902.jpg", "/images/hvac_001/18903.jpg", "/images/hvac_001/18904.jpg"],
-      features: ["Industrial HVAC Units", "Energy Management System", "Custom Ductwork", "24/7 Monitoring"],
+      features: ["System Pressure Testing", "Digital Control Integration", "BMS Signal Calibration", "Energy Load Optimization"],
       status: "Completed",
     },
     {
-      title: "Bathroom Project",
-      location: "Stamford, Connecticut",
-      category: "General Construction",
+      title: "Master Bath Remodel",
+      location: "Stamford, CT",
+      category: "Residential Renovation",
       year: "2023",
       description:
-        "Complete renovation of 100,000 sq ft corporate facility with focus on energy efficiency and modern workplace design.",
+        "This elegant bathroom transformation showcases the level of craftsmanship and project coordination that defines our construction management services. From the seamless marble-style tile installation to the frameless glass shower and modern gold-accent fixtures, every detail was carefully planned, sourced, and executed to deliver a high-end, spa-like finish.\n\nAt Kinch Enterprises LLC, we manage every phase of the project—from design coordination and material selection to skilled trade scheduling and quality control—ensuring your renovation is completed efficiently, on budget, and built to last.",
       images: ["/images/bathroom_001/img_001.jpeg", "/images/bathroom_001/img_002.jpeg", "/images/bathroom_001/img_003.jpeg"],
-      features: ["100,000 sq ft Renovation", "Energy Efficient Systems", "Modern Workspace Design", "HVAC Upgrade"],
+      features: ["Custom Glass Enclosure", "Large Format Tile Work", "High-End Gold Fixtures", "Integrated Shower Niche"],
       status: "Completed",
     },
     {
-      title: "Bathroom Project",
-      location: "Newark, New Jersey",
-      category: "Project Management",
+      title: "Contemporary Bath Refresh",
+      location: "Montclair, NJ",
+      category: "Residential Interior",
       year: "2022",
       description:
-        "New 25,000 sq ft community center serving underserved populations with recreational and educational facilities.",
+        "This stunning bathroom renovation blends elegant marble tile, a custom navy vanity, and warm gold fixtures to create a clean, modern space that feels both luxurious and functional. The frameless glass shower and precision tile work highlight the quality and attention to detail behind every project we manage.\n\nAt Kinch Enterprises LLC, our construction management ensures every phase—from planning to final finishes—is coordinated, efficient, and built to the highest standards.",
       images: ["/images/bathroom_002/img_001.jpeg", "/images/bathroom_002/img_002.jpeg"],
-      features: ["25,000 sq ft Facility", "Multi-Purpose Spaces", "Educational Facilities", "Recreational Areas"],
+      features: ["Navy Shaker-Style Vanity", "Gold Hardware Accents", "Floating Wood Shelving", "Space-Optimized Layout"],
       status: "Completed",
     },
     {
-      title: "Kitchen Project",
-      location: "Newark, New Jersey",
-      category: "Real Estate Development",
+      title: "Modern Shaker Kitchen Remodel",
+      location: "New Haven, CT",
+      category: "Residential Remodeling",
       year: "2024",
       description:
-        "High-end residential development featuring 75 luxury units with waterfront views and premium amenities.",
+        "Modern Design, Masterfully Managed Experience the perfect blend of warmth and utility. We coordinate every trade—from stone fabrication to high-end appliance integration—to create cohesive, light-filled spaces that define the modern home.",
       images: ["/images/kitchen_001/floor_plan.png", "/images/kitchen_001/img_001.jpeg", "/images/kitchen_001/img_002.jpeg", "/images/kitchen_001/img_003.jpg"],
-      features: ["75 Luxury Units", "Waterfront Location", "Premium Amenities", "Sustainable Features"],
+      features: ["Custom Shaker Cabinetry", "Open Shelving Accents", "Quartz Countertop Installation", "Subway Tile Backsplash"],
       status: "In Progress",
     },
     {
-      title: "Kitchen Project",
-      location: "New York, New York",
-      category: "Remodeling & Renovation",
+      title: "Contemporary Galley Refresh",
+      location: "Hartford, CT",
+      category: "Kitchen & Bath Renovation",
       year: "2023",
       description:
-        "Careful restoration of a 1920s commercial building while preserving historical character and adding modern functionality.",
+        "Seamless Coordination, Stunning Results Large-scale kitchen renovations require expert orchestration. We oversee every trade—ensuring your granite countertops, custom cabinetry, and lighting fixtures are integrated with surgical precision for a cohesive, upscale look.",
       images: ["/images/kitchen_002/img_001.jpeg", "/images/kitchen_002/img_002.jpeg", "/images/kitchen_002/img_003.jpeg"],
-      features: ["Historic Preservation", "Modern Upgrades", "Code Compliance", "Character Retention"],
+      features: ["Marble-Pattern Porcelain Floor", "Integrated Appliance Suite", "Under-Cabinet Task Lighting", "Soft-Close Storage Solutions"],
       status: "Completed",
     },
     {
-      title: "Living Room Project",
-      location: "Hartford, Connecticut",
-      category: "Custom Design",
+      title: "Urban Living Room Restoration",
+      location: "New York, NY",
+      category: "Interior Finish Carpentry",
       year: "2024",
       description:
-        "Innovative office complex designed with cutting-edge sustainable technologies and energy-efficient systems.",
+        "Where Quality Construction Meets Comfort A beautiful room starts with expert construction management. We oversee the critical details—recessed lighting, trim carpentry, and open-concept floor plans—ensuring your space is as durable as it is inviting.",
       images: ["/images/living_room_001/img_001.jpeg", "/images/living_room_001/img_002.jpeg"],
-      features: ["Sustainable Design", "Energy Efficient", "Modern Architecture", "Green Technologies"],
+      features: ["Restored Oak Hardwoods", "Custom Crown & Base Molding", "Recessed Lighting Retrofit", "Open Concept Transition"],
       status: "In Progress",
     },
     {
       title: "New Build",
-      location: "Hartford, Connecticut",
-      category: "General Construction",
+      location: "Manchester, CT",
+      category: "Ground-Up Residential",
       year: "2024",
       description:
-        "New construction of a 100,000 sq ft office complex with sustainable design and energy-efficient systems.",
+        "Managing a full-scale residential build requires a master hand. We oversee the entire lifecycle of the project—from the initial site excavation and reinforced concrete foundation to the structural framing and final exterior finishes. By managing every trade and phase in-house, we ensure the structural integrity of the 'bones' matches the high-end aesthetic of the final delivery, resulting in a classic New England Colonial that is as durable as it is inviting.",
       images: ["/images/new_build_001/img_001.jpeg", "/images/new_build_001/img_002.jpeg", "/images/new_build_001/img_003.jpeg", "/images/new_build_001/img_004.jpeg", "/images/new_build_001/img_005.jpeg", "/images/new_build_001/img_006.jpeg", "/images/new_build_001/img_007.jpeg", "/images/new_build_001/img_008.jpeg", "/images/new_build_001/img_009.jpeg"],
-      features: ["Sustainable Design", "Energy Efficient", "Modern Architecture", "Green Technologies"],
+      features: ["Phase I: Site & Foundation", "Phase II: Structural Envelope", "Phase III: Architectural Detail", "Phase IV: Interior Integration"],
       status: "In Progress",
     },
   ]
 
   const categories = [
     "All",
-    "Real Estate Development",
-    "General Construction",
-    "Project Management",
-    "Custom Design",
-    "Remodeling & Renovation",
+    "Mechanical (MEP)",
+    "Residential Renovation",
+    "Kitchen & Bath Renovation",
+    "Residential Remodeling",
+    "Residential Interior",
+    "Interior Finish Carpentry",
+    "Ground-Up Residential",
   ]
 
   return (
@@ -139,19 +141,10 @@ export default function ProjectsPage() {
             {projects.map((project, index) => (
               <Card key={index} className="group overflow-hidden hover:shadow-xl transition-all duration-300">
                 <div className="relative overflow-hidden aspect-[4/3]">
-                  {"images" in project ? (
-                    <ImageSlideshow
-                      images={project.images as string[]}
-                      imageClassName="group-hover:scale-105 transition-transform duration-300"
-                    />
-                  ) : (
-                    <Image
-                      src={(project as any).image || "/placeholder.svg"}
-                      alt={(project as any).title}
-                      fill
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  )}
+                  <ImageSlideshow
+                    images={project.images}
+                    imageClassName="group-hover:scale-105 transition-transform duration-300"
+                  />
                   <div className="absolute top-4 left-4 flex gap-2 z-10">
                     <Badge className="bg-orange-500">{project.category}</Badge>
                     <Badge variant={project.status === "Completed" ? "default" : "secondary"}>{project.status}</Badge>
@@ -173,7 +166,7 @@ export default function ProjectsPage() {
                           <span>{project.year}</span>
                         </div>
                       </div>
-                      <p className="text-slate-600 text-sm leading-relaxed">{project.description}</p>
+                      <p className="text-slate-600 text-sm leading-relaxed whitespace-pre-line">{project.description}</p>
                     </div>
 
                     <div className="space-y-2">

@@ -33,24 +33,25 @@ export default function HomePage() {
 
   const featuredProjects = [
     {
-      title: "Commercial HVAC Installation",
-      description: "High-efficiency heating and cooling system installation for large-scale commercial facilities",
+      title: "Commercial Boiler & HVAC Retrofit",
+      category: "Mechanical (MEP)",
+      description:
+        "This project involved a comprehensive mechanical system overhaul within a mission-critical corporate environment. Our team managed the full decommissioning of legacy boiler units and the subsequent installation of high-efficiency, multi-stage heating and cooling systems designed for maximum load-demand response. Beyond the physical hardware, a significant portion of the scope focused on precision commissioning: utilizing digital manifold gauge sets for real-time pressure diagnostics and integrating advanced control board logic into the existing Building Management System (BMS). By optimizing the signal calibration between the central plant and terminal units, we successfully achieved a stabilized thermal envelope, significantly reducing seasonal energy consumption while ensuring 24/7 climate reliability for the facility’s sensitive infrastructure..",
       images: ["/images/hvac_001/18902.jpg", "/images/hvac_001/18903.jpg", "/images/hvac_001/18904.jpg"],
-      category: "General Construction",
     },
     {
-      title: "Kitchen Project",
-      category: "Real Estate Development",
+      title: "Master Bath Remodel",
+      category: "Residential Renovation",
       description:
-        "High-end residential development featuring 75 luxury units with waterfront views and premium amenities.",
-      images: ["/images/kitchen_001/floor_plan.png", "/images/kitchen_001/img_001.jpeg", "/images/kitchen_001/img_002.jpeg", "/images/kitchen_001/img_003.jpg"],
+        "This elegant bathroom transformation showcases the level of craftsmanship and project coordination that defines our construction management services. From the seamless marble-style tile installation to the frameless glass shower and modern gold-accent fixtures, every detail was carefully planned, sourced, and executed to deliver a high-end, spa-like finish.\n\nAt Kinch Enterprises LLC, we manage every phase of the project—from design coordination and material selection to skilled trade scheduling and quality control—ensuring your renovation is completed efficiently, on budget, and built to last.",
+      images: ["/images/bathroom_001/img_001.jpeg", "/images/bathroom_001/img_002.jpeg", "/images/bathroom_001/img_003.jpeg"],
     },
     {
-      title: "New Build",
-      category: "General Construction",
+      title: "Contemporary Bath Refresh",
+      category: "Residential Interior",
       description:
-        "New construction of a 100,000 sq ft office complex with sustainable design and energy-efficient systems.",
-      images: ["/images/new_build_001/img_001.jpeg", "/images/new_build_001/img_002.jpeg", "/images/new_build_001/img_003.jpeg", "/images/new_build_001/img_004.jpeg", "/images/new_build_001/img_005.jpeg", "/images/new_build_001/img_006.jpeg", "/images/new_build_001/img_007.jpeg", "/images/new_build_001/img_008.jpeg", "/images/new_build_001/img_009.jpeg"],
+        "This stunning bathroom renovation blends elegant marble tile, a custom navy vanity, and warm gold fixtures to create a clean, modern space that feels both luxurious and functional. The frameless glass shower and precision tile work highlight the quality and attention to detail behind every project we manage.\n\nAt Kinch Enterprises LLC, our construction management ensures every phase—from planning to final finishes—is coordinated, efficient, and built to the highest standards.",
+      images: ["/images/bathroom_002/img_001.jpeg", "/images/bathroom_002/img_002.jpeg"],
     },
   ]
 
@@ -175,24 +176,15 @@ export default function HomePage() {
             {featuredProjects.map((project, index) => (
               <Card key={index} className="group overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div className="relative overflow-hidden aspect-[4/3]">
-                  {"images" in project ? (
-                    <ImageSlideshow
-                      images={project.images as string[]}
-                      imageClassName="group-hover:scale-105 transition-transform duration-300"
-                    />
-                  ) : (
-                    <Image
-                      src={(project as any).image || "/placeholder.svg"}
-                      alt={project.title}
-                      fill
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  )}
+                  <ImageSlideshow
+                    images={project.images}
+                    imageClassName="group-hover:scale-105 transition-transform duration-300"
+                  />
                   <Badge className="absolute top-4 left-4 bg-orange-500 z-10">{project.category}</Badge>
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold text-slate-900 mb-3">{project.title}</h3>
-                  <p className="text-slate-600 mb-4">{project.description}</p>
+                  <p className="text-slate-600 mb-4 whitespace-pre-line">{project.description}</p>
                   <Link
                     href="/projects"
                     className="inline-flex items-center text-orange-500 hover:text-orange-600 font-medium"
